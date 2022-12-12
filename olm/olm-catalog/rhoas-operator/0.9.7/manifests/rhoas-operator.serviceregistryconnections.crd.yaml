@@ -52,7 +52,14 @@ spec:
               metadata:
                 nullable: true
                 type: object
-                x-kubernetes-preserve-unknown-fields: true
+                properties:
+                  oauthTokenUrl:
+                    type: string
+                  provider:
+                    type: string
+                  type:
+                    type: string
+                #                x-kubernetes-preserve-unknown-fields: true
               updated:
                 nullable: true
                 type: string
